@@ -13,11 +13,33 @@
   }
 }
 
+.enlarge:hover {
+	transform:scale(2,2);
+	transform-origin:0 0;
+}
+
+#git-icon{
+  
+}
+
 .section-div{
-  padding-top: 400px;
-  padding-bottom: 400px;
+  padding-top:
+  padding-bottom:
+
 }
 
 h1{
   padding-top: 50px;
+}
+
+#About{
+
+}
+
+#Portfolio{
+
+}
+
+#Contact-Me{
+
 }
