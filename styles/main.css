@@ -16,10 +16,11 @@
 .enlarge:hover {
 	transform:scale(2,2);
 	transform-origin:0 0;
+
 }
 
 #git-icon{
-  
+
 }
 
 .section-div{
@@ -42,4 +43,8 @@ h1{
 
 #Contact-Me{
 
+}
+.project-canvas:hover{
+  opacity: 1;
+  background-color: green;
 }
