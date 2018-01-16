@@ -48,3 +48,37 @@ h1{
   opacity: 1;
   background-color: green;
 }
+
+#under-construction{
+  height:100px;
+  width:100px;
+}
+#under-construction:hover{
+  background-image:url(images/smiles.png);
+  width:150px;
+  height:150px;
+
+
+}
+.img-wrap{
+  height: 100px;
+  width: 100px;
+}
+
+ .img-description{ /*will be completely invisible until user hovers */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+.img-wrap:hover .img-description{
+  visibility: visible;
+  opacity: 1;
+}
