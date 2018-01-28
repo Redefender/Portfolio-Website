@@ -1,5 +1,5 @@
 *{
-  background-color: ;
+  font-family: sans-serif;
 }
 
 .body-style{
@@ -28,6 +28,9 @@
   padding-bottom:
 
 }
+.section-div img{
+  height: 20px;
+}
 
 h1{
   padding-top: 50px;
@@ -53,7 +56,7 @@ h1{
   height:100px;
   width:100px;
 }
-#under-construction:hover{
+.img-wrap:hover #under-construction{
   background-image:url(images/smiles.png);
   width:150px;
   height:150px;
@@ -62,7 +65,7 @@ h1{
 }
 .img-wrap{
   height: 100px;
-  width: 100px;
+  width: 400px;
 }
 
  .img-description{ /*will be completely invisible until user hovers */
@@ -75,10 +78,42 @@ h1{
   color: #fff;
   visibility: hidden;
   opacity: 0;
+  padding-right:100px
+
 
 }
 
 .img-wrap:hover .img-description{
   visibility: visible;
   opacity: 1;
+  padding-top: 50px;
+  font-size: 20px;
+  color: rgb(217, 217, 217);
+  font-style: oblique;
+}
+
+
+.portrait-wrapper{
+    float: right;
+
+}
+ #portrait{
+   border: 10px solid black;
+   margin:  20px;
+   height: 500px;
+  float: right;
+
+
+
+}
+
+.about-text{
+display: inline;
+  height: 800px
+}
+
+.about-text p{
+  display: inline;
+  text-align: left;
+
 }
