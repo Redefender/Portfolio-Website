@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <meta name="description" content="Ezra Jesalva Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Ezra Jesalva">
+  <meta name="author" content="Ezra Jesalva">\
+  <script language="javascript"></script>
 
 
 
@@ -21,7 +22,14 @@
   <![endif]-->
 </head>
 
+
 <body>
+
+
+  <button>
+    <h1>Thanks For Stopping By! </h1> <br>
+    <h1>In here you'll find all you need to know about me! </h1>
+  </button>
   <div class="container">
 
 
@@ -67,7 +75,7 @@
 
 <section id="About"></section>
 <h1>About</h1>
-<div class= "section-div well" id="About">
+  <div class= "section-div well" id="About">
   <div class="about-text">
   <p >
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
@@ -162,16 +170,16 @@
     I'm open to any comments, questions, and/or <b>business inquiries!</b> <br />
 
   </p>
-    <form action="sent.html" id= "Contact-Me-Form">
-      Name <span style="color: red">*</span><input type="text" style= "margin: 10px; width: 120px" required></input> <br>
-      Phone Number<input type="text" style="margin: 10px"></input> <br>
-      E-mail <span style="color: red">*</span><input type="text" style="margin: 10px" required></input> <br>
+    <form  id= "Contact-Me-Form">
+      Name <span style="color: red">*</span><input type="text" id= "formName" class="partOfHuman" style= "margin: 10px; width: 120px" required></input> <br>
+      Phone Number<input type="text"class="partOfHuman" id="formPhoneNumber"style="margin: 10px"></input> <br>
+      E-mail <span style="color: red">*</span><input type="text" id="formEmail" class="partOfHuman" style="margin: 10px" required></input> <br>
 
 
 
     Message <span style="color: red">*
-      <br></span><textarea rows="4" cols="50" >Enter message here... </textarea> <br>
-          <input type="submit"></input>
+      <br></span><textarea rows="4" cols="50" id="formMessage"class="partOfHuman" >Enter message here... </textarea> <br>
+          <input type="button" value = "Submit" class = "submit-form" onclick="youHitMyForm()"></input>
     </form>
 </div>
 <hr />
@@ -179,7 +187,52 @@
 <div>
 
 </div>
+<button type="button" onclick="iteratePeople()">Iterate</button>
+<script type="text/javascript">
+var myPeople = [];
 
+function iteratePeople(){
+
+  myPeople.forEach(function(person){
+
+    alert( 'person '  + ': ' + person.name);
+  })
+}
+
+function ContactHuman(name, phoneNumber, eMail,message) {
+  this.name = name;
+  this.phoneNumber = phoneNumber;
+  this.eMail = eMail;
+  this.message = message;
+}
+
+
+
+function youHitMyForm(){
+
+  var userName = document.getElementById('formName').value;
+  console.log('username ' +userName );
+  var userPhone = document.getElementById('formPhoneNumber').value;
+  console.log('userPhone ' +userPhone );
+  var userEmail = document.getElementById('formEmail').value;
+  console.log('userEmail ' +userEmail );
+
+  var userMessage = document.getElementById('formMessage').value;
+  console.log('userMessage ' +userMessage );
+  var human = new ContactHuman(userName,userPhone,userEmail,userMessage);
+
+
+
+   alert('the amount of people here are ' + myPeople.push(human));
+
+}
+
+
+
+
+
+
+</script>
 
 </body>
 </html

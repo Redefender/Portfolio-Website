@@ -1,6 +1,15 @@
 *{
   font-family: sans-serif;
 }
+.welcome{
+  height: 500px;
+  width: 500px;
+  position: fixed;
+  top: 100px;
+  left: 350px;
+  z-index: 10000;
+  background-color: green;
+}
 
 .body-style{
   background-color:
@@ -115,5 +124,10 @@ display: inline;
 .about-text p{
   display: inline;
   text-align: left;
+
+}
+.submit-form{
+  border: solid 2px grey;
+  /* z-index: -10; */
 
 }
